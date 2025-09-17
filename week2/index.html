@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html lang="ja"   >
+  <head>
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 450px;
+        width: 100%;
+      }
+
+      /**
+       * The zoomslider shall be placed between the zoom-in and zoom-out buttons.
+       */
+       #map .ol-zoom .ol-zoom-out {
+        margin-top: 210px;
+      }
+      #map .ol-zoomslider {
+        background-color: transparent;
+        top: calc(0.5em + 2px + 1px + 1.14 * 1.375em);
+      }
+
+      #map .ol-touch .ol-zoom .ol-zoom-out {
+        margin-top: 212px;
+      }
+      #map .ol-touch .ol-zoomslider {
+        top: 2.75em;
+      }
+
+      #map .ol-zoom-in.ol-has-tooltip:hover [role=tooltip],
+      #map .ol-zoom-in.ol-has-tooltip:focus [role=tooltip] {
+        top: 3px;
+      }
+
+      #map .ol-zoom-out.ol-has-tooltip:hover [role=tooltip],
+      #map .ol-zoom-out.ol-has-tooltip:focus [role=tooltip] {
+        top: 232px;
+      }
+      /* position the rotate control lower than usual */
+      .map .ol-rotate {
+       top: 3em;
+      }
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
+    <title>map of hokkaido</title>
+  </head>
+
+  <body>
+    <h1>北海道</h1>
+    <h2>do you know how to go to the station?</h2>
+    <div id="map" class="map"></div>
+    <script src="main.js"></script>
+  </body>
+
+</html>
