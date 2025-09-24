@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/css/ol.css" type="text/css" />
+  <style>
+    .map {
+      width: 100%;
+      height: 450px;
+    }
+    .ol-scale-bar {
+      left: 100px;
+    }
+    .ol-scale-line {
+      text-align: center;
+  position: absolute;
+  top: 70%;
+  left:60%;
+    }
+    .back-home {
+      top: 300px;
+      left: .5em;
+    }
+    .position-table {
+      border-collapse: collapse;
+      border-width: 0px;
+    }
+
+    .position-table td {
+      padding: 5px;
+    }
+
+
+  </style>
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/build/ol.js"></script>
+  <title>逢甲大學的地圖</title>
+</head>
+<body>
+  <!-- <h1>逢甲大學的地圖</h1> -->
+
+  <!-- 設定地圖容器 -->
+  <div id="map" class="map"></div>
+  <form>
+    控制器開關:
+    <input id="ckbFullScreen" type="checkbox" checked="checked" onclick="SwitchFullScreen(this);" />全螢幕&nbsp;&nbsp;
+    <input id="ckbOverviewMap" type="checkbox" checked="checked" onclick="SwitchOverviewMap(this);" />鷹眼&nbsp;&nbsp;
+    <input id="ckbZoomSlider" type="checkbox" checked="checked" onclick="SwitchZoomSlider(this);" />放大縮小軸<br />
+
+    <table class="position-table">
+      <tr>
+        <td>坐標:</td>
+        <td><span id="mouse-position"></span></td>
+      </tr>
+      <tr>
+        <td>japan:NAGOYA</td>
+        <td>136.9:35.1</td>
+      </tr>
+    </table>
+
+
+
+
+    <select id="ddlProjection" onchange="SetProjection(this);">
+      <option value="EPSG:4326">EPSG:4326</option>
+      <option value="EPSG:3857">EPSG:3857</option>
+    </select>
+    <label for="numPrecision">小數位數:</label>
+    <input id="numPrecision" type="number" min="0" max="12" value="4" onchange="SetPrecision(this);" />
+  </form>
+
+  <script src="main.js"></script>
+</body>
+</html>
