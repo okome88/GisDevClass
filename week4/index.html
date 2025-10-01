@@ -1,0 +1,49 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css"
+    type="text/css" />
+  <style>
+    .map {
+      width: 100%;
+      height: 450px;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
+  <title>我的地圖</title>
+</head>
+
+<body>
+  <h1>我的地圖</h1>
+
+  <form>
+    <!-- 起始位置按鈕 -->
+    <input type="button" id="btnInitView" name="btnInitView" value="start position" onclick="GoInitView();" />
+    <input type="button" id="btnRotateRight" name="btnRotateRight" value="順旋10度" onclick="RotateViewRight();" />
+    <input type="button" id="btnRotateLeft" name="btnRotateLeft" value="逆旋10度" onclick="RotateViewLeft();" />
+    <input type="button" id="btnAnimateRotateRight" name="btnAnimateRotateRight" value="旋轉" onclick="AnimateRotateViewRight();" />
+    <input type="button" id="btnAnimateRotateLeft" name="btnAnimateRotateLeft" value="逆旋45度(動態)" onclick="AnimateRotateViewLeft();" />
+    
+    <!-- 平移到逢甲大學 -->
+    <input type="button" id="btnPanToFcu" name="btnPanToFcu" value="平移到逢甲大學" onclick="PanToFcu();" />
+    <!-- 飛到科博館 -->
+    <input type="button" id="btnFlyToTMNS" name="btnFlyToTMNS" value="飛到科博館" onclick="FlyToTMNS();" />
+    <!-- 彈跳到文心森林公園 -->
+    <input type="button" id="btnBounceToWFP" name="btnBounceToWFP" value="彈跳到文心森林公園" onclick="BounceToWFP();" />
+    <!-- 旋轉到科博館 -->
+    <input type="button" id="btnSpinToTMNS" name="btnSpinToTMNS" value="旋轉到科博館" onclick="SpinToTMNS();" />
+    <!-- 旋轉到科博館 -->
+    <input type="button" id="btnFlyToTOKYO" name="btnFlyToTOKYO" value="飛到TOKYO" onclick="FlyToTOKYO();" />
+  
+  </form>  
+
+
+  <!-- 設定地圖容器 -->
+  <div id="map" class="map"></div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
