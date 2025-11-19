@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>商學大樓</name>
+
+		<Style id="__managed_style_2C488A5F7E1E22194902">
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/rpc/cc/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+
+		<Style id="__managed_style_1940897CAF1E22194902">
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/rpc/cc/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+
+	<StyleMap id="__managed_style_03531A99061E22194902">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1940897CAF1E22194902</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2C488A5F7E1E22194902</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="0174F8C95C1E221AFC0A">
+		<name>商學大樓</name>
+		<LookAt>
+			<longitude>120.6496203848091</longitude>
+			<latitude>24.17815490583435</latitude>
+			<altitude>97.11667907358604</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>190.274717268876</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_03531A99061E22194902</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						120.6492803253037,24.17846252601614,96.87830012512445 120.6492940379648,24.17821045645211,97.09795470109096 120.65001948524,24.17820878016591,96.88599677720208 120.6500146804464,24.17840453250924,97.36657443416897 120.6499027066674,24.1783994527718,97.27261220445959 120.6498892076883,24.17847553770524,97.40781111385782 120.6492803253037,24.17846252601614,96.87830012512445 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

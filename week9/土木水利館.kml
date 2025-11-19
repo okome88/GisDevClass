@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>土木水利館</name>
+
+		<Style id="__managed_style_2C488A5F7E1E22194902">
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/rpc/cc/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+
+		<Style id="__managed_style_1940897CAF1E22194902">
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/rpc/cc/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+
+	<StyleMap id="__managed_style_03531A99061E22194902">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1940897CAF1E22194902</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2C488A5F7E1E22194902</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="0B40900FD51E22095488">
+		<name>土木水利館</name>
+		<LookAt>
+			<longitude>120.6468381653379</longitude>
+			<latitude>24.18105309949092</latitude>
+			<altitude>97.46707897135076</altitude>
+			<heading>1.873801759982962</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>181.3162506299341</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_03531A99061E22194902</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						120.646880591555,24.18120056980268,97.72821134533774 120.6468830858468,24.1811690954078,97.72824269960483 120.6465287126879,24.18115171680061,97.44346390894955 120.6465319008891,24.18092096563007,96.69453138918288 120.6465812626112,24.18092450206995,96.72590352612411 120.6465821544772,24.18085771441966,96.46449193449484 120.6466933515067,24.18085445127544,96.51429281070885 120.6466875941146,24.18093971553339,96.89186604872316 120.6470547997218,24.18095237447977,97.61348355686172 120.6470517384612,24.18117397752174,97.72824768199651 120.646880591555,24.18120056980268,97.72821134533774 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
