@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css" type="text/css">
+  <style>
+    .map {
+      width: 100%;
+      height: 450px;
+    }
+
+    .ol-tooltip {
+      position: relative;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 4px;
+      color: white;
+      padding: 4px 8px;
+      opacity: 0.7;
+      white-space: nowrap;
+      font-size: 14px;
+      cursor: default;
+      user-select: none;
+    }
+
+    .ol-tooltip-my {
+      opacity: 1;
+      font-weight: bold;
+    }
+
+    .ol-tooltip-my:before {
+      border-top: 6px solid rgba(0, 0, 0, 0.8);
+      border-right: 6px solid transparent;
+      border-left: 6px solid transparent;
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      margin-left: -7px;
+      left: 50%;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
+  <title>我的地圖</title><!-- 視窗標題 -->
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <span class="navbar-brand">我的地圖</span><!-- 標題 -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="GoInitView();">啟始位置</a><!-- 功能 -->
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">我的位置</a><!-- 功能 -->
+        </li>
+
+        <li class="nav-item dropdown">
+          <!-- 下拉選單 -->
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-expanded="false">量測工具</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">距離量測</a>
+            <a class="dropdown-item" href="#">面積量測</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">結束量測</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <!-- 下拉選單 -->
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-expanded="false">設定</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            &nbsp;&nbsp;<input id="ckbFullScreen" type="checkbox" checked="checked" />&nbsp;全螢幕<br />
+            <div class="dropdown-divider"></div>
+            &nbsp;&nbsp;<input id="ckbOverviewMap" type="checkbox" checked="checked" />&nbsp;鷹眼<br />
+            &nbsp;&nbsp;<input id="ckbZoomSlider" type="checkbox" checked="checked" />&nbsp;放大縮小軸<br />
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">其他功能</a>
+        </li>
+
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+        <!-- 建築物下拉選擇 -->
+        <select id="building" onchange="buildingChange();">
+          <option value="">--請選擇--</option>
+          <option value="人言大樓">人言大樓</option>
+          <option value="土木水利館">土木水利館</option>
+          <option value="育樂館">育樂館</option>
+          <option value="商學大樓">商學大樓</option>
+        </select>
+      </form>
+
+    </div>
+  </nav>
+
+  <!-- 設定地圖容器 -->
+  <div id="map" class="map"></div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

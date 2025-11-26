@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Placemark>
+<name>新竹國賓大飯店</name>
+<description>300新竹市東區中華路2段188號 (03)5151111</description>
+<Point><coordinates>120.978266,24.8064021,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>新竹老爺大酒店</name>
+<description>300新竹市東區光復路1段227號 (03)5631122</description>
+<Point><coordinates>121.0206846,24.7818819,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>荷米斯飯店</name>
+<description>300新竹市北區西大路606號1-9樓 (03)5269999</description>
+<Point><coordinates>120.961848,24.807045,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>新苑庭園大飯店</name>
+<description>300新竹市東區大同路11號 (03)5226868</description>
+<Point><coordinates>120.969772,24.80301,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>心園商務旅館</name>
+<description>300新竹市東區民權路223號 (03)5313525</description>
+<Point><coordinates>120.971966,24.811643,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>微旅商務旅館</name>
+<description>300新竹市東區民生路268號 (03)5323183</description>
+<Point><coordinates>120.975287,24.81299,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>風之海岸旅館</name>
+<description>300新竹市北區尚濱路36號 (03)5366095</description>
+<Point><coordinates>120.929566,24.842027,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>豪美旅店</name>
+<description>300新竹市東區勝利路86號1-2F (03)5218441</description>
+<Point><coordinates>120.969046,24.8013041,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>棒球精緻旅店</name>
+<description>300新竹市北區西大路549號 (03)5261172</description>
+<Point><coordinates>120.961648,24.806983,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>宏碁大道城飯店</name>
+<description>300新竹市北區北大路358號 (03)5282255</description>
+<Point><coordinates>120.961162,24.805541,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>紫晶汽車旅館</name>
+<description>300新竹市東區頂竹里東南街53巷18號 (03)5620789</description>
+<Point><coordinates>120.9729241,24.7992643,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>煙波大飯店-麗池館</name>
+<description>300新竹市東區明湖路773號1-6樓 (03)5203181</description>
+<Point><coordinates>120.967642,24.775333,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>煙波大飯店-溫莎館</name>
+<description>300新竹市東區明湖路775巷51號 (03)5203181</description>
+<Point><coordinates>120.970584,24.776403,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>普邑斯商務旅館</name>
+<description>300新竹市東區東區民權路193號 (03)5428681</description>
+<Point><coordinates>120.973479,24.8099537,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>煙波大飯店-都會一館</name>
+<description>300新竹市東區民生路177號 (03)6120000</description>
+<Point><coordinates>120.976038,24.811241,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>卡爾登飯店</name>
+<description>300新竹市北區北大路225號 (03)5259999</description>
+<Point><coordinates>120.965078,24.807818,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>老爺旅社</name>
+<description>300新竹市東區光復路二段167號 (03)5711585</description>
+<Point><coordinates>120.992305,24.799204,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>金頓大飯店</name>
+<description>300新竹市東區光復路一段238號4-12樓 (03)5646655</description>
+<Point><coordinates>121.021061,24.782017,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>啊囉哈一六八汽車旅館</name>
+<description>300新竹市北區西濱路1段217號 (03)5362277</description>
+<Point><coordinates>120.9284614,24.8348079,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>左岸假期旅店</name>
+<description>300新竹市東區中華路二段502號 (03)5284800</description>
+<Point><coordinates>120.969459,24.800803,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>華泰經典旅店</name>
+<description>300新竹市東區勝利路15號 (03)5243145</description>
+<Point><coordinates>120.969483,24.801128,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>東賓大旅社</name>
+<description>300新竹市東區林森路14號 (03)5223161</description>
+<Point><coordinates>120.970593,24.801897,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>金燕大飯店</name>
+<description>300新竹市東區民族路13號 (03)5227151</description>
+<Point><coordinates>120.971641,24.803217,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>柿子紅快捷旅店</name>
+<description>300新竹市東區大同路23巷5號 (03)5223232</description>
+<Point><coordinates>120.969323,24.803254,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>柏克萊大飯店</name>
+<description>300新竹市北區中正路151號 (03)5251155</description>
+<Point><coordinates>120.966481,24.809257,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>賓城大旅社</name>
+<description>300新竹市東區中正路13號5-10樓 (03)5269255</description>
+<Point><coordinates>120.971006,24.802984,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>迎曦大飯店(文化店)</name>
+<description>300新竹市東區文化街10號2-10樓 (03)5347266</description>
+<Point><coordinates>120.971579,24.806165,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>芝蘭賓館</name>
+<description>300新竹市東區中華路二段480號 (03)5254166</description>
+<Point><coordinates>120.970239,24.801339,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>元首大飯店</name>
+<description>300新竹市東區建功一路29號 (03)5711111</description>
+<Point><coordinates>120.997966,24.797262,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>金座渡假汽車旅館</name>
+<description>300新竹市東區明湖路928-2，930號 (03)5201833</description>
+<Point><coordinates>120.97226,24.770503,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>新都旅館</name>
+<description>300新竹市東區中南街12號 (03)5261131</description>
+<Point><coordinates>120.967763,24.801546,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>國賓旅館</name>
+<description>300新竹市東區大同路21號 (03)5243164</description>
+<Point><coordinates>120.969571,24.803091,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>東城精品旅館</name>
+<description>300新竹市東區府後街5巷1號 (03)5222648</description>
+<Point><coordinates>120.970467,24.80516,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>約客旅舘</name>
+<description>300新竹市北區東大路四段121號 (03)5361122</description>
+<Point><coordinates>120.932406,24.843114,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>合悅都會商旅</name>
+<description>300新竹市北區西大路417號 (03)5234499</description>
+<Point><coordinates>120.963906,24.803971,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>月圓汽車旅館</name>
+<description>300新竹市北區少年街88號 (03)5231728</description>
+<Point><coordinates>120.958018,24.806365,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>豪美商旅有限公司</name>
+<description>300新竹市北區中正路107號11樓 (03)5213333</description>
+<Point><coordinates>120.967767,24.807198,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>悅豪大飯店</name>
+<description>300新竹市東區復興路22號 (03)5267890</description>
+<Point><coordinates>120.969061,24.802881,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>新苑名流都會館</name>
+<description>300新竹市東區大同路20號 (03)5211888</description>
+<Point><coordinates>120.969814,24.803314,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>向日葵汽車旅館</name>
+<description>300新竹市北區經國路二段150號 (03)5359797</description>
+<Point><coordinates>120.9628059,24.8112676,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>日月光國際大飯店</name>
+<description>300新竹市東區中央路355巷16號1，3-6樓 (03)5456363</description>
+<Point><coordinates>120.980442,24.81271,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>湖山渡假汽車旅館</name>
+<description>300新竹市東區明湖路1001號 (03)5203000</description>
+<Point><coordinates>120.968467,24.772559,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>馬德里經典旅館</name>
+<description>300新竹市香山區中華路四段729號 (03)5305533</description>
+<Point><coordinates>120.929134,24.788312,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>水晶旅館有限公司</name>
+<description>300新竹市北區聖軍路75號 (03)5366789</description>
+<Point><coordinates>120.929541,24.842856,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>城市花園汽車旅館</name>
+<description>300新竹市北區東大路二段377號 (03)5422989</description>
+<Point><coordinates>120.961833,24.819017,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>承攜行旅新竹中央館</name>
+<description>300新竹市東區中央路106號B2，1樓，8-15樓 (03)5212323</description>
+<Point><coordinates>120.969475,24.806053,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>新竹德威大飯店</name>
+<description>300新竹市香山區富群街3號 (03)5297300</description>
+<Point><coordinates>120.956679,24.768933,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>新竹福華大飯店</name>
+<description>300新竹市北區中正路178號 (03)5282323</description>
+<Point><coordinates>120.966259,24.809958,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>新竹伊普索酒店</name>
+<description>300新竹市東區公道五路2段111號 (03)5169308</description>
+<Point><coordinates>121.005757,24.798793,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>芙洛麗大飯店</name>
+<description>300新竹市東區民族路69號 (03)6238899</description>
+<Point><coordinates>120.975153,24.806618,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>吉發明月大飯店</name>
+<description>300新竹市東區東門街128號 (03)5281818</description>
+<Point><coordinates>120.96956,24.804251,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>晶悅精品旅館</name>
+<description>300新竹市東區關新二街49號 (03)6667567</description>
+<Point><coordinates>121.018631,24.785585,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>金沙商務旅舘</name>
+<description>300新竹市北區東濱街18號4樓 (03)5368221</description>
+<Point><coordinates>120.9260993,24.8327469,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>新舍商旅新竹館</name>
+<description>300新竹市北區西大路658號 (03)5221082</description>
+<Point><coordinates>120.960896,24.808261,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>暐順和選旅</name>
+<description>300新竹市東區光明里1鄰大學路16號 (03)5715888</description>
+<Point><coordinates>121.0008043,24.78915,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>達龍商旅</name>
+<description>300新竹市東區東園里4鄰光復路二段808號 (03)5166666</description>
+<Point><coordinates>120.9847245,24.8023674,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>水蜜桃時尚旅店</name>
+<description>300新竹市東區民族路29號 (03)5234138</description>
+<Point><coordinates>120.9719408,24.8037674,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>琺何旅館有限公司</name>
+<description>300新竹市東區振興里振興路109號 (03)5610011</description>
+<Point><coordinates>120.9606446,24.7952615,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>或者風旅</name>
+<description>300新竹市北區大同路175號 (03)5220505</description>
+<Point><coordinates>120.9665807,24.807347,0</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>瘋人苑</name>
+<description>300新竹市東區新竹市世界街128號 </description>
+<Point><coordinates>120.9671414,24.807602,0</coordinates></Point>
+</Placemark>
+</Document>
+</kml>
