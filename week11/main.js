@@ -1,4 +1,4 @@
-﻿const defaultControls = ol.control.defaults;  //取用defaults控制器群套件
+const defaultControls = ol.control.defaults;  //取用defaults控制器群套件
 const ZoomSlider = ol.control.ZoomSlider;  //取用ZoomSlider放大縮小軸控制器套件
 const CircleStyle = ol.style.Circle;  //取用style套件Circle類別
 const Fill = ol.style.Fill;  //取用style套件Fill類別
@@ -25,12 +25,19 @@ const vectorSource = new ol.source.Vector({
     extractStyles: false,  //截取KML樣式
   }),
 });
-
+const vectorSource2 = new ol.source.Vector({
+  url: 'dbd.kml',
+  format: new Kml({
+    extractStyles: false,  //截取KML樣式
+  }),
+});
 //當Vector圖層資料載入時, 定位到全圖
 vectorSource.on('featuresloadend', function (evt) {
   map.getView().fit(vectorSource.getExtent());
 });
-
+vectorSource2.on('featuresloadend', function (evt) {
+  map.getView().fit(vectorSource2.getExtent());
+});
 //一般樣式
 const normalStyle = new Style({
   fill: new Fill({
@@ -67,9 +74,23 @@ const vector = new ol.layer.Vector({
       return styles;
     };
   })()
+  
 
 });
+const vector2 = new ol.layer.Vector({
+  source: vectorSource2,
+  style: (function () {
+    var style = normalStyle;
+    var styles = [style];
+    return function (feature, resolution) {
+      style.getFill().setColor(DistrictColorSet(feature.get("name")));
+      style.getText().setText(feature.get("name"));
+      return styles;
+    };
+  })()
+  
 
+});
 //建立 放大縮小軸 控制器
 const zoomSliderControl = new ZoomSlider();
 
@@ -84,7 +105,7 @@ const view = new ol.View(defaultViewOptions);
 var map = new ol.Map({
   controls: defaultControls().extend([zoomSliderControl]),
   target: 'map',
-  layers: [raster, vector],
+  layers: [raster, vector,vector2],
 
   view: view,
 });
