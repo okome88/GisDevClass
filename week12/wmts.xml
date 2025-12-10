@@ -1,0 +1,3911 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Capabilities xmlns="http://www.opengis.net/wmts/1.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml" xsi:schemaLocation="http://www.opengis.net/wmts/1.0 http://schemas.opengis.net/wmts/1.0/wmtsGetCapabilities_response.xsd" version="1.0.0">
+	<ows:ServiceIdentification>
+	<ows:Title>Taiwan MAP Service</ows:Title>
+		<ows:ServiceType>OGC WMTS</ows:ServiceType>
+		<ows:ServiceTypeVersion>1.0.0</ows:ServiceTypeVersion>
+		</ows:ServiceIdentification>
+		<ows:OperationsMetadata>
+			<ows:Operation name="GetCapabilities">
+			<ows:DCP>
+			<ows:HTTP>
+			<ows:Get xlink:href="https://wmts.nlsc.gov.tw/wmts/WMTSCapabilities.xml">
+			<ows:Constraint name="GetEncoding">
+			<ows:AllowedValues>
+				<ows:Value>RESTful</ows:Value>
+			</ows:AllowedValues>
+			</ows:Constraint>
+			</ows:Get>
+			<ows:Get xlink:href="https://wmts.nlsc.gov.tw/wmts?">
+			<ows:Constraint name="GetEncoding">
+			<ows:AllowedValues>
+				<ows:Value>KVP</ows:Value>
+			</ows:AllowedValues>
+			</ows:Constraint>
+			</ows:Get>
+			</ows:HTTP>
+			</ows:DCP>
+			</ows:Operation>
+			<ows:Operation name="GetTile">
+			<ows:DCP>
+			<ows:HTTP>
+			<ows:Get xlink:href="https://wmts.nlsc.gov.tw/wmts/">
+			<ows:Constraint name="GetEncoding">
+			<ows:AllowedValues>
+				<ows:Value>RESTful</ows:Value>
+			</ows:AllowedValues>
+			</ows:Constraint>
+			</ows:Get>
+			<ows:Get xlink:href="https://wmts.nlsc.gov.tw/wmts?">
+			<ows:Constraint name="GetEncoding">
+			<ows:AllowedValues>
+				<ows:Value>KVP</ows:Value>
+			</ows:AllowedValues>
+			</ows:Constraint>
+			</ows:Get>
+			</ows:HTTP>
+			</ows:DCP>
+			</ows:Operation>
+		</ows:OperationsMetadata>
+		<Contents>
+			<Layer>
+				<ows:Title>臺灣通用電子地圖</ows:Title>
+				<ows:Identifier>EMAP</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>-2.0037508342789248E7 -2.00489661040146E7</ows:LowerCorner>
+				<ows:UpperCorner>2.0037508342789248E7 2.0048966104014598E7</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAP/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>臺灣通用電子地圖透明</ows:Title>
+				<ows:Identifier>EMAP2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>-2.0037508342789248E7 -2.00489661040146E7</ows:LowerCorner>
+				<ows:UpperCorner>2.0037508342789248E7 2.0048966104014598E7</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAP2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>臺灣通用電子地圖(套疊等高線)OpenData, 最大比例尺一萬八千分之一</ows:Title>
+				<ows:Identifier>EMAP5_OPENDATA</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAP5_OPENDATA/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>臺灣通用電子地圖(等高線+門牌)</ows:Title>
+				<ows:Identifier>EMAP5</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>-2.0037508342789248E7 -2.00489661040146E7</ows:LowerCorner>
+				<ows:UpperCorner>2.0037508342789248E7 2.0048966104014598E7</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAP5/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>臺灣通用電子地圖(不含等高線)OpenData, 最大比例尺一萬八千分之一</ows:Title>
+				<ows:Identifier>EMAP6_OPENDATA</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAP6_OPENDATA/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>臺灣通用電子地圖(無等高線)</ows:Title>
+				<ows:Identifier>EMAP6</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>-2.0037508342789248E7 -2.00489661040146E7</ows:LowerCorner>
+				<ows:UpperCorner>2.0037508342789248E7 2.0048966104014598E7</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAP6/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>TaiwanE-Map(Transparent)</ows:Title>
+				<ows:Identifier>EMAP7</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>-2.0037508342789248E7 -2.00489661040146E7</ows:LowerCorner>
+				<ows:UpperCorner>2.0037508342789248E7 2.0048966104014598E7</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAP7/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>TaiwanE-Map(EN)</ows:Title>
+				<ows:Identifier>EMAP8</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>-2.0037508342789248E7 -2.00489661040146E7</ows:LowerCorner>
+				<ows:UpperCorner>2.0037508342789248E7 2.0048966104014598E7</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAP8/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>臺灣通用電子地圖(無等高線及門牌)</ows:Title>
+				<ows:Identifier>EMAP16</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>-2.0037508342789248E7 -2.00489661040146E7</ows:LowerCorner>
+				<ows:UpperCorner>2.0037508342789248E7 2.0048966104014598E7</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAP16/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>臺灣通用電子地圖(等高線無門牌)</ows:Title>
+				<ows:Identifier>EMAP15</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>-2.0037508342789248E7 -2.00489661040146E7</ows:LowerCorner>
+				<ows:UpperCorner>2.0037508342789248E7 2.0048966104014598E7</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAP15/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>臺灣通用電子地圖透明(無門牌)</ows:Title>
+				<ows:Identifier>EMAP12</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>-2.0037508342789248E7 -2.00489661040146E7</ows:LowerCorner>
+				<ows:UpperCorner>2.0037508342789248E7 2.0048966104014598E7</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAP12/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>正射影像圖(通用)</ows:Title>
+				<ows:Identifier>PHOTO2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/PHOTO2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/100000 地形圖</ows:Title>
+				<ows:Identifier>B100000</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/B100000/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/25000 地形圖</ows:Title>
+				<ows:Identifier>B25000</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/B25000/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/50000 地形圖</ows:Title>
+				<ows:Identifier>B50000</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/B50000/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000基本地形圖</ows:Title>
+				<ows:Identifier>B5000</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/B5000/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>縣市界</ows:Title>
+				<ows:Identifier>CITY</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/CITY/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>地質敏感區(山崩與地滑)</ows:Title>
+				<ows:Identifier>GeoSensitive2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/GeoSensitive2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>地質敏感區</ows:Title>
+				<ows:Identifier>GeoSensitive</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/GeoSensitive/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>地段外圍圖(段籍圖)</ows:Title>
+				<ows:Identifier>LANDSECT</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LANDSECT/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查成果圖</ows:Title>
+				<ows:Identifier>LUIMAP</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000圖幅框</ows:Title>
+				<ows:Identifier>MB5000</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/MB5000/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>道路路網</ows:Title>
+				<ows:Identifier>ROAD</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/ROAD/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>各級學校範圍圖</ows:Title>
+				<ows:Identifier>SCHOOL</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/SCHOOL/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>避難收容所</ows:Title>
+				<ows:Identifier>SHELTERS</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/SHELTERS/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>土壤液化潛勢_初級</ows:Title>
+				<ows:Identifier>SoilLiquefaction</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/SoilLiquefaction/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>鄉鎮區界</ows:Title>
+				<ows:Identifier>TOWN</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOWN/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>村里界</ows:Title>
+				<ows:Identifier>Village</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Village/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>非都市土地使用分區圖</ows:Title>
+				<ows:Identifier>nURBAN1</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/nURBAN1/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>非都市土地使用地類別圖</ows:Title>
+				<ows:Identifier>nURBAN2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/nURBAN2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>正射影像圖(92-94)</ows:Title>
+				<ows:Identifier>PHOTO1</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/PHOTO1/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>公有土地地籍圖</ows:Title>
+				<ows:Identifier>LAND_OPENDATA</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LAND_OPENDATA/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查104年更新區</ows:Title>
+				<ows:Identifier>LUIMAP104</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP104/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查105年更新區</ows:Title>
+				<ows:Identifier>LUIMAP105</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP105/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>104年正射影像圖</ows:Title>
+				<ows:Identifier>PHOTO2015</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/PHOTO2015/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>地政事務所轄區圖</ows:Title>
+				<ows:Identifier>LandOffice</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LandOffice/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>臺灣通用電子地圖(無鐵公路)</ows:Title>
+				<ows:Identifier>EMAP9</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAP9/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>消防栓</ows:Title>
+				<ows:Identifier>fireplug</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/fireplug/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>臺灣通用電子地圖(無文字)</ows:Title>
+				<ows:Identifier>EMAPX99</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAPX99/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>正射影像(混合)</ows:Title>
+				<ows:Identifier>PHOTO_MIX</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/PHOTO_MIX/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>Taiwan e-Map(new)</ows:Title>
+				<ows:Identifier>EMAP97</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAP97/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>臺灣通用電子地圖(高DPI字)</ows:Title>
+				<ows:Identifier>EMAP96</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAP96/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>臺灣通用電子地圖(新)</ows:Title>
+				<ows:Identifier>EMAP98</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAP98/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查106年更新區</ows:Title>
+				<ows:Identifier>LUIMAP106</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP106/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查-1類農業</ows:Title>
+				<ows:Identifier>LUIMAP01</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP01/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查-2類森林</ows:Title>
+				<ows:Identifier>LUIMAP02</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP02/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查-3類交通</ows:Title>
+				<ows:Identifier>LUIMAP03</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP03/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查-4類水利</ows:Title>
+				<ows:Identifier>LUIMAP04</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP04/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查-5類建築</ows:Title>
+				<ows:Identifier>LUIMAP05</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP05/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查-6類公共</ows:Title>
+				<ows:Identifier>LUIMAP06</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP06/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查-7類遊憩</ows:Title>
+				<ows:Identifier>LUIMAP07</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP07/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查-8類礦鹽</ows:Title>
+				<ows:Identifier>LUIMAP08</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP08/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查-9類其他</ows:Title>
+				<ows:Identifier>LUIMAP09</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP09/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>AED位置</ows:Title>
+				<ows:Identifier>AED</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/AED/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用調查成果圖82年</ows:Title>
+				<ows:Identifier>LUIMAP82</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP82/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用調查成果圖95-97年</ows:Title>
+				<ows:Identifier>LUIMAP95</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP95/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查098年更新區</ows:Title>
+				<ows:Identifier>LUIMAP98</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP98/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查099年更新區</ows:Title>
+				<ows:Identifier>LUIMAP99</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP99/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查100年更新區</ows:Title>
+				<ows:Identifier>LUIMAP100</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP100/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查101年更新區</ows:Title>
+				<ows:Identifier>LUIMAP101</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP101/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查102年更新區</ows:Title>
+				<ows:Identifier>LUIMAP102</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP102/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查103年更新區</ows:Title>
+				<ows:Identifier>LUIMAP103</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP103/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查107年更新區</ows:Title>
+				<ows:Identifier>LUIMAP107</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP107/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>臺灣通用電子地圖(灰階)</ows:Title>
+				<ows:Identifier>EMAP01</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>-2.0037508342789248E7 -2.00489661040146E7</ows:LowerCorner>
+				<ows:UpperCorner>2.0037508342789248E7 2.0048966104014598E7</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/EMAP01/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>坡向圖</ows:Title>
+				<ows:Identifier>MOI_ASPECT</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/MOI_ASPECT/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>等高線圖(2003-2005)</ows:Title>
+				<ows:Identifier>MOI_CONTOUR</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/MOI_CONTOUR/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>陰影圖</ows:Title>
+				<ows:Identifier>MOI_HILLSHADE</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/MOI_HILLSHADE/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>渲染圖</ows:Title>
+				<ows:Identifier>MOI_SHADERMAP</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/MOI_SHADERMAP/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>坡度圖-30%坡(2003-2005)</ows:Title>
+				<ows:Identifier>MOI_SLOPEP_GT30</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/MOI_SLOPEP_GT30/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>坡度圖-7級(2003-2005)</ows:Title>
+				<ows:Identifier>MOI_SLOPEP_LV7</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/MOI_SLOPEP_LV7/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>坡度圖-30%坡(2010-2015)</ows:Title>
+				<ows:Identifier>MOI_SLOPEP_GT30_2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/MOI_SLOPEP_GT30_2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>坡度圖-7級(2010-2015)</ows:Title>
+				<ows:Identifier>MOI_SLOPEP_LV7_2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/MOI_SLOPEP_LV7_2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>等高線圖(2010-2015)</ows:Title>
+				<ows:Identifier>MOI_CONTOUR_2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/MOI_CONTOUR_2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>103年正射影像圖</ows:Title>
+				<ows:Identifier>PHOTO2014</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/PHOTO2014/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>105年正射影像圖</ows:Title>
+				<ows:Identifier>PHOTO2016</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/PHOTO2016/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>106年正射影像圖</ows:Title>
+				<ows:Identifier>PHOTO2017</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/PHOTO2017/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查108年更新區</ows:Title>
+				<ows:Identifier>LUIMAP108</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP108/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>便利商店(超商)</ows:Title>
+				<ows:Identifier>ConvenienceStore</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/ConvenienceStore/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/25000地形圖107</ows:Title>
+				<ows:Identifier>TOPO25K_107</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO25K_107/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/50000地形圖107</ows:Title>
+				<ows:Identifier>TOPO50K_107</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO50K_107/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/100000地形圖107</ows:Title>
+				<ows:Identifier>TOPO10M_107</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO10M_107/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>村里界(108年10月)</ows:Title>
+				<ows:Identifier>Village201910</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Village201910/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>107年正射影像圖</ows:Title>
+				<ows:Identifier>PHOTO2018</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/PHOTO2018/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>108年正射影像圖</ows:Title>
+				<ows:Identifier>PHOTO2019</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/PHOTO2019/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查109年更新區</ows:Title>
+				<ows:Identifier>LUIMAP109</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP109/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/50000地形圖109</ows:Title>
+				<ows:Identifier>TOPO50K_109</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO50K_109/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/100000地形圖109</ows:Title>
+				<ows:Identifier>TOPO10M_109</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO10M_109/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>地段外圍圖(段籍圖)(類別)</ows:Title>
+				<ows:Identifier>LANDSECT2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LANDSECT2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>土壤液化潛勢_中級</ows:Title>
+				<ows:Identifier>SoilLiquefaction2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/SoilLiquefaction2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/25000地形圖109</ows:Title>
+				<ows:Identifier>TOPO25K_109</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO25K_109/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖109</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_109</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_109/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>109年正射影像圖</ows:Title>
+				<ows:Identifier>PHOTO2020</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/PHOTO2020/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>蘭嶼鄉正射影像109年</ows:Title>
+				<ows:Identifier>PHOTO_VA</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/PHOTO_VA/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/25000地形圖108</ows:Title>
+				<ows:Identifier>TOPO25K_108</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO25K_108/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖106</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_106</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_106/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖105</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_105</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_105/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖108</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_108</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_108/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖107</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_107</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_107/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖104</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_104</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_104/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查110年更新區</ows:Title>
+				<ows:Identifier>LUIMAP110</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP110/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/100000地形圖110</ows:Title>
+				<ows:Identifier>TOPO10M_110</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO10M_110/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/50000地形圖110</ows:Title>
+				<ows:Identifier>TOPO50K_110</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO50K_110/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖103</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_103</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_103/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖102</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_102</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_102/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖101</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_101</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_101/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖97</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_097</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_097/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖98</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_098</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_098/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖100</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_100</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_100/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖99</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_099</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_099/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖96</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_096</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_096/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖95</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_095</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_095/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖94</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_094</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_094/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖81</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_081</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_081/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖83</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_083</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_083/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖84</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_084</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_084/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖86</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_086</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_086/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖87</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_087</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_087/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖88</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_088</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_088/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖89</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_089</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_089/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖93</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_093</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_093/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖92</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_092</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_092/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖91</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_091</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_091/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖90</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_090</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_090/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/25000地形圖110</ows:Title>
+				<ows:Identifier>TOPO25K_110</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO25K_110/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/10000像片基本圖</ows:Title>
+				<ows:Identifier>TOPO10KPHOTO</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO10KPHOTO/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖65</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_065</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_065/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖66</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_066</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_066/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖67</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_067</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_067/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖68</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_068</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_068/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖69</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_069</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_069/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖70</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_070</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_070/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖71</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_071</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_071/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖72</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_072</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_072/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖73</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_073</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_073/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖74</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_074</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_074/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖75</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_075</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_075/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖76</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_076</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_076/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖78</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_078</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_078/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖79</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_079</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_079/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖80</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_080</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_080/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>110年正射影像圖</ows:Title>
+				<ows:Identifier>PHOTO2021</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/PHOTO2021/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖110</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_110</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_110/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>臺灣通用電子地圖加值分棟建物框</ows:Title>
+				<ows:Identifier>BUILDX</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/BUILDX/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/50000地形圖111</ows:Title>
+				<ows:Identifier>TOPO50K_111</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO50K_111/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/100000地形圖111</ows:Title>
+				<ows:Identifier>TOPO10M_111</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO10M_111/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查111年更新區</ows:Title>
+				<ows:Identifier>LUIMAP111</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP111/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖111</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_111</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_111/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/25000地形圖111</ows:Title>
+				<ows:Identifier>TOPO25K_111</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO25K_111/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>空載光達數值地形變異分析圖(0.5M門檻)</ows:Title>
+				<ows:Identifier>DDEM05</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/DDEM05/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖112年</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_112</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_112/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查112年更新區</ows:Title>
+				<ows:Identifier>LUIMAP112</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP112/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/50000地形圖112</ows:Title>
+				<ows:Identifier>TOPO50K_112</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO50K_112/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/50000地形圖113</ows:Title>
+				<ows:Identifier>TOPO50K_113</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO50K_113/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/100000地形圖112</ows:Title>
+				<ows:Identifier>TOPO10M_112</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO10M_112/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/100000地形圖113</ows:Title>
+				<ows:Identifier>TOPO10M_113</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO10M_113/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/25000地形圖112</ows:Title>
+				<ows:Identifier>TOPO25K_112</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO25K_112/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查113年更新區</ows:Title>
+				<ows:Identifier>LUIMAP113</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP113/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/5000像片基本圖113年</ows:Title>
+				<ows:Identifier>TOPO05KPHOTO_113</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO05KPHOTO_113/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>1/25000地形圖113</ows:Title>
+				<ows:Identifier>TOPO25K_113</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/TOPO25K_113/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>111年正射影像圖</ows:Title>
+				<ows:Identifier>PHOTO2022</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/PHOTO2022/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>112年正射影像圖</ows:Title>
+				<ows:Identifier>PHOTO2023</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/PHOTO2023/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>113年正射影像圖</ows:Title>
+				<ows:Identifier>PHOTO2024</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/PHOTO2024/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_2024_2025_災前航照圖</ows:Title>
+				<ows:Identifier>Asrs_2025_ortho</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_2025_ortho/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20250925_航照圖1</ows:Title>
+				<ows:Identifier>Asrs_20250925_1</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20250925_1/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20250925_航照圖2</ows:Title>
+				<ows:Identifier>Asrs_20250925_2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20250925_2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20250925_航照圖3</ows:Title>
+				<ows:Identifier>Asrs_20250925_3</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20250925_3/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20250927_航照圖1</ows:Title>
+				<ows:Identifier>Asrs_20250927_1</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20250927_1/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20250927_航照圖2</ows:Title>
+				<ows:Identifier>Asrs_20250927_2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20250927_2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20250927_航照圖3</ows:Title>
+				<ows:Identifier>Asrs_20250927_3</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20250927_3/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20250928_航照圖1</ows:Title>
+				<ows:Identifier>Asrs_20250928_1</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20250928_1/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20250928_航照圖2</ows:Title>
+				<ows:Identifier>Asrs_20250928_2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20250928_2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20250929_航照圖1</ows:Title>
+				<ows:Identifier>Asrs_20250929_1</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20250929_1/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20250929_航照圖2</ows:Title>
+				<ows:Identifier>Asrs_20250929_2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20250929_2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20250930_航照圖1</ows:Title>
+				<ows:Identifier>Asrs_20250930_1</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20250930_1/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20250930_航照圖2</ows:Title>
+				<ows:Identifier>Asrs_20250930_2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20250930_2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251001_航照圖1</ows:Title>
+				<ows:Identifier>Asrs_20251001_1</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/jpeg</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/jpeg" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251001_1/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251002_航照圖1</ows:Title>
+				<ows:Identifier>Asrs_20251002_1</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251002_1/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251002_航照圖2</ows:Title>
+				<ows:Identifier>Asrs_20251002_2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251002_2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251002_航照圖3</ows:Title>
+				<ows:Identifier>Asrs_20251002_3</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251002_3/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251004_航照圖1</ows:Title>
+				<ows:Identifier>Asrs_20251004_1</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251004_1/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251004_航照圖2</ows:Title>
+				<ows:Identifier>Asrs_20251004_2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251004_2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251004_航照圖3</ows:Title>
+				<ows:Identifier>Asrs_20251004_3</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251004_3/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251003_航照圖1</ows:Title>
+				<ows:Identifier>Asrs_20251003_1</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251003_1/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251003_航照圖2</ows:Title>
+				<ows:Identifier>Asrs_20251003_2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251003_2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251003_航照圖3</ows:Title>
+				<ows:Identifier>Asrs_20251003_3</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251003_3/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251003_航照圖4</ows:Title>
+				<ows:Identifier>Asrs_20251003_4</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251003_4/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251003_航照圖5</ows:Title>
+				<ows:Identifier>Asrs_20251003_5</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251003_5/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251003_航照圖6</ows:Title>
+				<ows:Identifier>Asrs_20251003_6</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251003_6/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251003_航照圖7</ows:Title>
+				<ows:Identifier>Asrs_20251003_7</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251003_7/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251005_航照圖1</ows:Title>
+				<ows:Identifier>Asrs_20251005_1</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251005_1/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251005_航照圖2</ows:Title>
+				<ows:Identifier>Asrs_20251005_2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251005_2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251005_航照圖3</ows:Title>
+				<ows:Identifier>Asrs_20251005_3</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251005_3/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251006_航照圖1</ows:Title>
+				<ows:Identifier>Asrs_20251006_1</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251006_1/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251006_航照圖2</ows:Title>
+				<ows:Identifier>Asrs_20251006_2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251006_2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251006_航照圖3</ows:Title>
+				<ows:Identifier>Asrs_20251006_3</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251006_3/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251007_航照圖1</ows:Title>
+				<ows:Identifier>Asrs_20251007_1</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251007_1/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251007_航照圖2</ows:Title>
+				<ows:Identifier>Asrs_20251007_2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251007_2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251007_航照圖3</ows:Title>
+				<ows:Identifier>Asrs_20251007_3</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251007_3/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>國土利用現況調查114年更新區</ows:Title>
+				<ows:Identifier>LUIMAP114</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/LUIMAP114/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251013_航照圖1</ows:Title>
+				<ows:Identifier>Asrs_20251013_1</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251013_1/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251013_航照圖2</ows:Title>
+				<ows:Identifier>Asrs_20251013_2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251013_2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251013_航照圖3</ows:Title>
+				<ows:Identifier>Asrs_20251013_3</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251013_3/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251013_航照圖4</ows:Title>
+				<ows:Identifier>Asrs_20251013_4</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251013_4/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251013_航照圖5</ows:Title>
+				<ows:Identifier>Asrs_20251013_5</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251013_5/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251013_航照圖6</ows:Title>
+				<ows:Identifier>Asrs_20251013_6</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251013_6/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251013_航照圖7</ows:Title>
+				<ows:Identifier>Asrs_20251013_7</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251013_7/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251013_航照圖8</ows:Title>
+				<ows:Identifier>Asrs_20251013_8</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251013_8/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251013_航照圖9</ows:Title>
+				<ows:Identifier>Asrs_20251013_9</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251013_9/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251116_航照圖1</ows:Title>
+				<ows:Identifier>Asrs_20251116_1</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251116_1/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251116_航照圖2</ows:Title>
+				<ows:Identifier>Asrs_20251116_2</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251116_2/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251116_航照圖3</ows:Title>
+				<ows:Identifier>Asrs_20251116_3</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251116_3/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251116_航照圖4</ows:Title>
+				<ows:Identifier>Asrs_20251116_4</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251116_4/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251116_航照圖5</ows:Title>
+				<ows:Identifier>Asrs_20251116_5</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251116_5/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251116_航照圖6</ows:Title>
+				<ows:Identifier>Asrs_20251116_6</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251116_6/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251116_航照圖7</ows:Title>
+				<ows:Identifier>Asrs_20251116_7</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251116_7/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<Layer>
+				<ows:Title>馬太鞍溪事件_20251116_航照圖8</ows:Title>
+				<ows:Identifier>Asrs_20251116_8</ows:Identifier>
+				<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::3857">
+				<ows:LowerCorner>1.3124165E7 2441815.0</ows:LowerCorner>
+				<ows:UpperCorner>1.3622663E7 3055804.0</ows:UpperCorner>
+				</ows:BoundingBox>
+				<Style isDefault="true">
+				<ows:Title>Default Style</ows:Title>
+				<ows:Identifier>default</ows:Identifier>
+				</Style>
+				<Format>image/png</Format>
+				<TileMatrixSetLink>
+				<TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
+				</TileMatrixSetLink>
+				<ResourceURL format="image/png" resourceType="tile" template="https://wmts.nlsc.gov.tw/wmts/Asrs_20251116_8/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}"/>
+				</Layer>
+			<TileMatrixSet>
+			<ows:Title>GoogleMapsCompatible</ows:Title>
+			<ows:Abstract>the wellknown 'GoogleMapsCompatible' tile matrix set defined by OGC WMTS specification</ows:Abstract>
+			<ows:Identifier>GoogleMapsCompatible</ows:Identifier>
+			<ows:SupportedCRS>urn:ogc:def:crs:EPSG::3857</ows:SupportedCRS>
+			<WellKnownScaleSet>urn:ogc:def:wkss:OGC:1.0:GoogleMapsCompatible</WellKnownScaleSet>
+			<TileMatrix>
+			<ows:Identifier>0</ows:Identifier>
+			<ScaleDenominator>5.590822640287178E8</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>1</MatrixWidth>
+			<MatrixHeight>1</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>1</ows:Identifier>
+			<ScaleDenominator>2.795411320143589E8</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>2</MatrixWidth>
+			<MatrixHeight>2</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>2</ows:Identifier>
+			<ScaleDenominator>1.3977056600717944E8</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>4</MatrixWidth>
+			<MatrixHeight>4</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>3</ows:Identifier>
+			<ScaleDenominator>6.988528300358972E7</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>8</MatrixWidth>
+			<MatrixHeight>8</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>4</ows:Identifier>
+			<ScaleDenominator>3.494264150179486E7</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>16</MatrixWidth>
+			<MatrixHeight>16</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>5</ows:Identifier>
+			<ScaleDenominator>1.747132075089743E7</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>32</MatrixWidth>
+			<MatrixHeight>32</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>6</ows:Identifier>
+			<ScaleDenominator>8735660.375448715</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>64</MatrixWidth>
+			<MatrixHeight>64</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>7</ows:Identifier>
+			<ScaleDenominator>4367830.1877243575</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>128</MatrixWidth>
+			<MatrixHeight>128</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>8</ows:Identifier>
+			<ScaleDenominator>2183915.0938621787</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>256</MatrixWidth>
+			<MatrixHeight>256</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>9</ows:Identifier>
+			<ScaleDenominator>1091957.5469310894</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>512</MatrixWidth>
+			<MatrixHeight>512</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>10</ows:Identifier>
+			<ScaleDenominator>545978.7734655447</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>1024</MatrixWidth>
+			<MatrixHeight>1024</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>11</ows:Identifier>
+			<ScaleDenominator>272989.38673277234</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>2048</MatrixWidth>
+			<MatrixHeight>2048</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>12</ows:Identifier>
+			<ScaleDenominator>136494.69336638617</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>4096</MatrixWidth>
+			<MatrixHeight>4096</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>13</ows:Identifier>
+			<ScaleDenominator>68247.34668319309</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>8192</MatrixWidth>
+			<MatrixHeight>8192</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>14</ows:Identifier>
+			<ScaleDenominator>34123.67334159654</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>16384</MatrixWidth>
+			<MatrixHeight>16384</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>15</ows:Identifier>
+			<ScaleDenominator>17061.83667079827</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>32768</MatrixWidth>
+			<MatrixHeight>32768</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>16</ows:Identifier>
+			<ScaleDenominator>8530.918335399136</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>65536</MatrixWidth>
+			<MatrixHeight>65536</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>17</ows:Identifier>
+			<ScaleDenominator>4265.459167699568</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>131072</MatrixWidth>
+			<MatrixHeight>131072</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>18</ows:Identifier>
+			<ScaleDenominator>2132.729583849784</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>262144</MatrixWidth>
+			<MatrixHeight>262144</MatrixHeight>
+			</TileMatrix>
+			<TileMatrix>
+			<ows:Identifier>19</ows:Identifier>
+			<ScaleDenominator>1066.364791924892</ScaleDenominator>
+			<TopLeftCorner>-20037508.34278925 20037508.34278925</TopLeftCorner>
+			<TileWidth>256</TileWidth>
+			<TileHeight>256</TileHeight>
+			<MatrixWidth>524288</MatrixWidth>
+			<MatrixHeight>524288</MatrixHeight>
+			</TileMatrix>
+			</TileMatrixSet>
+		</Contents>
+	</Capabilities>
